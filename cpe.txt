@@ -1,2 +1,7 @@
 acme:thttpd
 nothings:stb_truetype
+citrix:virtual_apps_and_desktops
+openbsd:openssh
+putty:putty
+filezilla-project:filezilla_client
+gitlab:gitlab
