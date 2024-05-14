@@ -10,10 +10,12 @@ LABEL "homepage"="https://github.com/sholguin/vulnalerts"
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
+
 # Install packages required to build OpenSSL
 RUN apt-get update && apt-get install -y \
     build-essential \
-    libssl-dev
+    libssl-dev \
+    wget
 
 # Install OpenSSL from source
 RUN wget https://www.openssl.org/source/openssl-1.1.1l.tar.gz && \
