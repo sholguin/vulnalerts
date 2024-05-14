@@ -5,8 +5,8 @@ LABEL "com.github.actions.description"="Daily customized CVE Alerts straight to 
 LABEL "version"="1.0"
 LABEL "com.github.actions.icon"="shield"
 LABEL "com.github.actions.color"="blue"
-LABEL "repository"="https://github.com/y-mehta/vulnalerts"
-LABEL "homepage"="https://github.com/y-mehta/vulnalerts"
+LABEL "repository"="https://github.com/sholguin/vulnalerts"
+LABEL "homepage"="https://github.com/sholguin/vulnalerts"
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
