@@ -6,7 +6,7 @@ on:
 
 jobs:
   alert:
-    runs-on: ubuntu-latest
+    runs-on: cverunner
     steps:
     - uses: actions/checkout@master
     - uses: sholguin/vulnalerts@master
