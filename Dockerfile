@@ -1,4 +1,4 @@
-FROM buildpack-deps:bookworm
+FROM python:3-bullseye
 
 LABEL "com.github.actions.name"="VulnAlerts"
 LABEL "com.github.actions.description"="Daily customized CVE Alerts straight to your Slack Inbox for Free."
@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     libssl-dev \
     wget
+
 # Install OpenSSL from source
 RUN wget https://www.openssl.org/source/openssl-1.1.1l.tar.gz && \
     tar -xf openssl-1.1.1l.tar.gz && \
